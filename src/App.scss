@@ -1,0 +1,88 @@
+$main-color: #EB5E55;
+$dark-color: #3A3335;
+$secondary-color: #D81E5B;
+$ligth-color: #FDF0D5;
+$neutral-color: #C6D8D3;
+
+*{
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $dark-color;
+}
+
+h1{
+  position: absolute;
+  top: 2rem; 
+  text-align: center;
+  color: $main-color;
+  font-size: 36px;
+}
+
+.drum-machine{
+  display: flex;
+  background-color: $ligth-color;
+  width: 750px;
+  height: 500px;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.drum-pad{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.display{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.key-pressed{
+  background-color: $secondary-color !important;
+
+}
+
+.pad{
+  width: 30%;
+  padding: 1rem 4rem;
+  margin: 0.3rem;
+  background-color: $main-color;
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  align-items: center;
+  font-size: 36px;
+  border-radius: 15px;
+  
+}
+
+.switch, .power{
+  padding: 0.5rem;
+  margin: 0.5rem; 
+  background-color: $neutral-color;
+  height: 85px;
+  border-radius: 10px;
+}
+
+.power{
+  -webkit-box-shadow: 10px 10px 39px 0px rgba(255,242,232,1);
+  -moz-box-shadow: 10px 10px 39px 0px rgba(255,242,232,1);
+  box-shadow: 10px 10px 39px 0px rgba(255,242,232,1);
+
+  background-color: $secondary-color;
+
+}
